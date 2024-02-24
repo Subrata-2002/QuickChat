@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: sans-serif;
+}
+
+.chat_section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand h1 {
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.brand img {
+    height: 40px;
+    width: 40px;
+}
+
+.msg_area {
+    height: 400px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+#msg {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: 'none';
+    border: none;
+    font-family: sans-serif;
+    border-radius: 7px;
+}
+
+.msg_area div .msg {
+    margin: 0px;
+    align-items: flex-start;
+    margin: 10px 0px;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+
+}
+
+.msg_area .right .msg {
+    align-items: flex-end;
+
+}
+
+.msg_area div .msg .input {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+
+.msg_area div .msg .msg-text {
+    background: #8F8F8F;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.msg_area .incoming {
+    color: red;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.msg_area .outgoing {
+    color: blue;
+    font-weight: bold;
+    align-self: flex-start;
+}
